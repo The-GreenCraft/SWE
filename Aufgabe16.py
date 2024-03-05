@@ -45,4 +45,11 @@ def max3(a, b, c):
 
 print(max3(3, 6, 5))
 
-# Aufgabe 6 
+# Aufgabe 6 (nur zum Ansehen)
+def f():
+    print(a)
+
+a = 1
+f()
+
+# Aufgabe 7 (nur zum Ansehen)
