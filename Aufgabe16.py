@@ -53,3 +53,109 @@ a = 1
 f()
 
 # Aufgabe 7 (nur zum Ansehen)
+def f():
+    a = 1
+
+f()
+print(a)
+
+# Aufgabe 8
+def f():
+    a = 1
+    print(a)
+
+a = 0
+print(a)
+f()
+print(a)
+
+#Aufgabe 9
+def factorial(n):
+    res = 1
+    for i in range(1, n + 1):
+        res *= i
+    return res
+
+for i in range(1, 6):
+    print(factorial(i), ' = ', i, '!', sep='')
+    
+#Aufgabe 10
+def f():
+    print(a)
+    if False:
+        a = 0
+
+a = 1
+f()
+
+#Aufgabe 11
+def f():
+    global a
+    a = 1
+    print(a)
+
+a = 0
+print(a)
+f()
+print(a)
+
+#Aufgabe 12
+def factorial(n):
+    global f
+    res = 1
+    for i in range(2, n + 1):
+        res *= i
+    f = res
+
+n = int(input())
+factorial(n)
+print(f)
+
+#Aufgabe 13
+# the chunk of code that can be copied from program to program
+def factorial(n):
+    res = 1
+    for i in range(2, n + 1):
+        res *= i
+    return res
+# end of the chunk
+
+n = int(input())
+f = factorial(n)
+print(f)
+
+#Aufgabe 14
+a = input()
+b = input()
+
+def f(a,b):
+    return [a + "th", b + "th"]
+
+n, m = f(a, b)
+print(n)
+print(m)
+
+#Aufgabe 15
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))
+
+#Aufgabe 16 (Gelöst)
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def double_factorial(n):
+    if n <= 0:
+        return 1
+    else:
+        return n * double_factorial(n - 2)
+
+print(double_factorial(5))
+
