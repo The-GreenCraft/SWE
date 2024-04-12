@@ -13,7 +13,7 @@ total_load = read_csv("Total Load - Day Ahead _ Actual_202201010000-202301010000
 
 
 def create_histogram(data, title):
-    plt.hist([float(row[0]) for row in data[1:]], bins=20)
+    plt.hist([row[0] for row in data[1:]], bins=20)
     plt.title(title)
     plt.xlabel('Wert')
     plt.ylabel('Häufigkeit')
