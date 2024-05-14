@@ -7,4 +7,4 @@ with open('Day-ahead Prices_202201010000-202301010000.csv', 'r') as file:
 with open('Total Load - Day Ahead _ Actual_202201010000-202301010000.csv', 'r') as file:
     reader = csv.reader(file)
 
-loads = [float(row[2]) for row in reader[1:]]
+# Aufgegeben.... :(
